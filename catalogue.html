@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogue — Loptishop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shoplop.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Loptishop</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html" aria-current="page">Catalogue</a></li>
+        <li><a href="panier.html" class="nav-cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 3h2l2.4 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 6H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
+          Panier
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <h2>Le catalogue</h2>
+
+      <div class="filters" role="group" aria-label="Filtrer par catégorie">
+        <button type="button" class="filter-btn" aria-pressed="true">Tout</button>
+        <button type="button" class="filter-btn" aria-pressed="false">Karako</button>
+        <button type="button" class="filter-btn" aria-pressed="false">Robe</button>
+        <button type="button" class="filter-btn" aria-pressed="false">Accessoire</button>
+        <button type="button" class="filter-btn" aria-pressed="false">Livraison</button>
+      </div>
+
+      <div class="product-grid">
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="blueargentassimi.jpg" alt="Karako Algérien chargé en dain japonaise et du chaara"></div>
+          <div class="info"><h3>Assimi</h3><p class="price">5 000 DA</p></div>
+        </a>
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="vertwejdan.jpg" alt="Karako Algérien semi chargé en dain japonaise et du chaara"></div>
+          <div class="info"><h3>Wejdan</h3><p class="price">4 500 DA</p></div>
+        </a>
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="rougeikram.jpg" alt="Karako Algériensimple en dain japonaise et du chaara"></div>
+          <div class="info"><h3>Ikram</h3><p class="price">3 800 DA</p></div>
+        </a>
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="blufergani.jpg" alt="Robe Fergani Algérienne en dain japonaise et du fetla"></div>
+          <div class="info"><h3>Fergani</h3><p class="price">3 200 DA</p></div>
+        </a>
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="tarbouchechaara.jpg" alt="Tarbouch Algérien du karako chaara"></div>
+          <div class="info"><h3>Tarbouch chaara</h3><p class="price">500 DA</p></div>
+        </a> 
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="tarbouchefetla.jpg" alt="Tarbouch Algérien du fergani fetla"></div>
+          <div class="info"><h3>Tarbouch fetla</h3><p class="price">500 DA</p></div>
+        </a>
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="saboargent.jpg" alt="Sabo traditionnel Algérien"></div>
+          <div class="info"><h3>Sabo</h3><p class="price">1 000 DA</p></div>
+        </a>
+        <a href="produit.html" class="product-card">
+          <div class="thumb"><img src="robekarako.jpg" alt="Robe Karako Algérienne en dain japonaise"></div>
+          <div class="info"><h3>Robe Karako</h3><p class="price">6 000 DA</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Lotishop</h3>
+      <p>Vetements et accessoires artisanaux algériens pour fillettes</p>
+    </div>
+    <div>
+      <h3>Boutique</h3>
+      <ul>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="panier.html">Mon panier</a></li>
+        <li><a href="index.html">Livraison</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>contact@loptishop.dz</p>
+      <p>Ghardaia, Algérie</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Loptishop. Tous droits réservés.</div>
+</footer>
+
+</body>
+</html>

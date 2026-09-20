@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon panier — Loptishop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shoplop.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Loptishop</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="panier.html" aria-current="page" class="nav-cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 3h2l2.4 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 6H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
+          Panier
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <h2>Votre panier</h2>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Quantité</th>
+            <th>Sous-total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="item-info">
+              <img src="blueargentassimi.jpg" alt="Assimi">
+              <span>Assimi<br>5 000 DA</span>
+            </td>
+            <td><input type="number" value="1" min="1" aria-label="Quantité — Assimi"></td>
+            <td>5 000 DA</td>
+          </tr>
+          <tr>
+            <td class="item-info">
+              <img src="tarbouchechaaraargent.jpg" alt="tarbouche chaara argenté">
+              <span>tarbouche chaara argenté<br>500 DA</span>
+            </td>
+            <td><input type="number" value="1" min="1" aria-label="Quantité — tarbouche chaara argenté"></td>
+            <td>500 DA</td>
+          </tr>
+          <tr>
+            <td class="item-info">
+              <img src="saboargent.jpg" alt="sabo argenté">
+              <span>sabo argenté<br>1 000 DA</span>
+            </td>
+            <td><input type="number" value="1" min="1" aria-label="Quantité — sabo argenté"></td>
+            <td>1 000 DA</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <div class="row"><span>Sous-total</span><span>6 500 DA</span></div>
+        <div class="row"><span>Livraison</span><span>500 DA</span></div>
+        <div class="row total"><span>Total</span><span>7 000 DA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Finaliser la commande</h2>
+      <form>
+        <fieldset>
+          <legend>Coordonnées</legend>
+          <div class="field">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          <div class="field">
+            <label for="adresse">Adresse de livraison</label>
+            <input type="text" id="adresse" name="adresse" required>
+          </div>
+          <div class="field">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mode de livraison</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="livraison" checked> Domicile</label>
+            <label><input type="radio" name="livraison"> Point relais</label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-block">Valider la commande</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Lotishop</h3>
+      <p>Vetements et accessoires artisanaux algériens pour fillettes</p>
+    </div>
+    <div>
+      <h3>Boutique</h3>
+      <ul>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="panier.html">Mon panier</a></li>
+        <li><a href="index.html">Livraison</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>contact@loptishop.dz</p>
+      <p>Ghardaia, Algérie</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Loptishop. Tous droits réservés.</div>
+</footer>
